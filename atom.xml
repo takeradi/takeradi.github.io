@@ -88,8 +88,8 @@
     <link href="http://yoursite.com/2015/12/04/hello-world/"/>
     <id>http://yoursite.com/2015/12/04/hello-world/</id>
     <published>2015-12-04T16:26:41.000Z</published>
-    <updated>2015-12-04T17:25:38.000Z</updated>
-    <content type="html"><![CDATA[<p>I created this blog using <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>. Hexo is a static site generator. It enables you to quickly build a simple website in under 10 mins. Since I am so impressed by Hexo, I am going to let their intro be my first post. Here goes!</p>
+    <updated>2015-12-04T20:19:43.000Z</updated>
+    <content type="html"><![CDATA[<p>I created this blog using <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>. Hexo is a static site generator. It enables you to build a simple website in under 10 mins. Since I am so impressed by Hexo, I am going to let their intro be my first post. Here goes!</p>
 <p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.<br><a id="more"></a></p>
 <h2 id="Quick_Start">Quick Start</h2><h3 id="Create_a_new_post">Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
 <p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
@@ -101,7 +101,7 @@
 <p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<p>I created this blog using <a href="http://hexo.io/">Hexo</a>. Hexo is a static site generator. It enables you to quickly build a simple website in under 10 mins. Since I am so impressed by Hexo, I am going to let their intro be my first post. Here goes!</p>
+    <![CDATA[<p>I created this blog using <a href="http://hexo.io/">Hexo</a>. Hexo is a static site generator. It enables you to build a simple website in under 10 mins. Since I am so impressed by Hexo, I am going to let their intro be my first post. Here goes!</p>
 <p>Welcome to <a href="http://hexo.io/">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.<br>]]>
     
     </summary>
