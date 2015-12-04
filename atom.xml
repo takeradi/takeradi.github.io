@@ -3,9 +3,9 @@
   <title><![CDATA[takeradi]]></title>
   <subtitle><![CDATA[takeradi]]></subtitle>
   <link href="/atom.xml" rel="self"/>
-  <link href="http://yoursite.com/"/>
-  <updated>2015-12-04T20:54:13.000Z</updated>
-  <id>http://yoursite.com/</id>
+  <link href="http://takeradi.github.io/"/>
+  <updated>2015-12-04T21:13:06.000Z</updated>
+  <id>http://takeradi.github.io/</id>
   
   <author>
     <name><![CDATA[takeradi]]></name>
@@ -16,17 +16,18 @@
   
   <entry>
     <title><![CDATA[Multiple Git accounts on one PC]]></title>
-    <link href="http://yoursite.com/2015/12/04/Multiple-Git-accounts-on-one-PC/"/>
-    <id>http://yoursite.com/2015/12/04/Multiple-Git-accounts-on-one-PC/</id>
+    <link href="http://takeradi.github.io/2015/12/04/Multiple-Git-accounts-on-one-PC/"/>
+    <id>http://takeradi.github.io/2015/12/04/Multiple-Git-accounts-on-one-PC/</id>
     <published>2015-12-04T20:41:19.000Z</published>
-    <updated>2015-12-04T20:54:13.000Z</updated>
+    <updated>2015-12-04T21:13:06.000Z</updated>
     <content type="html"><![CDATA[<p>What do you when you have to manage multiple Git accounts on the same PC? I face the same situation for managing my work and personal Git accounts. Github recommends <a href="https://help.github.com/articles/merging-multiple-user-accounts/" target="_blank" rel="external">merging both the accounts</a> and managing all your repos from one account.</p>
 <p>What if you still want to manage them seperately?<br><a id="more"></a><br>You could follow these steps:</p>
 <ol>
 <li><p>Set up one of the accounts (the more frequently used one) with the global config. Refer to this <a href="https://help.github.com/articles/set-up-git/" target="_blank" rel="external">Github documentation</a>. This will save you the pain of authenticating every time you want to commit something.</p>
 </li>
-<li><p>For your second account, override the global config by a local one everytime you create a repo. While this might be a bit longer (2 extra commands for god’s sake!), it saves you from merging both the accounts and helps you manage both the accounts in a cleaner fashion. Following are the steps to override the local config by a global one.</p>
+<li><p>For your second account, override the global config by a local one everytime you create a repo. While this might be a bit longer (2 extra commands for god’s sake!), it saves you from merging both the accounts and helps you manage both the accounts in a cleaner fashion. Following are the steps to override the global config by a local one:</p>
  <figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">✝  ~/takeradi/blog   master±  git config user<span class="class">.name</span> takeradi</span><br><span class="line">✝  ~/takeradi/blog   master±  git config user<span class="class">.email</span> sampleemail@sampleemail.com</span><br></pre></td></tr></table></figure>
+<p> <em>Note: The above steps should be performed inside the newly created repo before committing/pushing anything to your Git remote repo.</em></p>
 </li>
 </ol>
 <p>Hope this helps!</p>
@@ -37,16 +38,16 @@
     
     </summary>
     
-      <category term="Git" scheme="http://yoursite.com/tags/Git/"/>
+      <category term="Git" scheme="http://takeradi.github.io/tags/Git/"/>
     
-      <category term="Version Control" scheme="http://yoursite.com/categories/Version-Control/"/>
+      <category term="Version Control" scheme="http://takeradi.github.io/categories/Version-Control/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[Git Submodules]]></title>
-    <link href="http://yoursite.com/2015/12/04/Git-Submodules/"/>
-    <id>http://yoursite.com/2015/12/04/Git-Submodules/</id>
+    <link href="http://takeradi.github.io/2015/12/04/Git-Submodules/"/>
+    <id>http://takeradi.github.io/2015/12/04/Git-Submodules/</id>
     <published>2015-12-04T16:26:41.000Z</published>
     <updated>2015-12-04T19:36:44.000Z</updated>
     <content type="html"><![CDATA[<p>This post aims to ease the pain that one might feel while trying to understand <a href="https://git-scm.com/book/en/v2/Git-Tools-Submodules" target="_blank" rel="external">Git Submodules</a>. It is an advanced Git topic but it really isn’t that difficult to understand.</p>
@@ -106,16 +107,16 @@
     
     </summary>
     
-      <category term="Git" scheme="http://yoursite.com/tags/Git/"/>
+      <category term="Git" scheme="http://takeradi.github.io/tags/Git/"/>
     
-      <category term="Version Control" scheme="http://yoursite.com/categories/Version-Control/"/>
+      <category term="Version Control" scheme="http://takeradi.github.io/categories/Version-Control/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[Hello World]]></title>
-    <link href="http://yoursite.com/2015/12/04/hello-world/"/>
-    <id>http://yoursite.com/2015/12/04/hello-world/</id>
+    <link href="http://takeradi.github.io/2015/12/04/hello-world/"/>
+    <id>http://takeradi.github.io/2015/12/04/hello-world/</id>
     <published>2015-12-04T16:26:41.000Z</published>
     <updated>2015-12-04T20:39:26.000Z</updated>
     <content type="html"><![CDATA[<p>I created this blog using <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>. Hexo is a static site generator. It enables you to build a simple website in under 5 mins. Since I am so impressed by Hexo, I am going to let their intro be my first post. Here goes!</p>
@@ -135,9 +136,9 @@
     
     </summary>
     
-      <category term="Hexo" scheme="http://yoursite.com/tags/Hexo/"/>
+      <category term="Hexo" scheme="http://takeradi.github.io/tags/Hexo/"/>
     
-      <category term="General" scheme="http://yoursite.com/categories/General/"/>
+      <category term="General" scheme="http://takeradi.github.io/categories/General/"/>
     
   </entry>
   
