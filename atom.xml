@@ -4,7 +4,7 @@
   <subtitle><![CDATA[takeradi]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com/"/>
-  <updated>2015-12-04T19:36:44.000Z</updated>
+  <updated>2015-12-04T20:54:13.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -13,6 +13,35 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[Multiple Git accounts on one PC]]></title>
+    <link href="http://yoursite.com/2015/12/04/Multiple-Git-accounts-on-one-PC/"/>
+    <id>http://yoursite.com/2015/12/04/Multiple-Git-accounts-on-one-PC/</id>
+    <published>2015-12-04T20:41:19.000Z</published>
+    <updated>2015-12-04T20:54:13.000Z</updated>
+    <content type="html"><![CDATA[<p>What do you when you have to manage multiple Git accounts on the same PC? I face the same situation for managing my work and personal Git accounts. Github recommends <a href="https://help.github.com/articles/merging-multiple-user-accounts/" target="_blank" rel="external">merging both the accounts</a> and managing all your repos from one account.</p>
+<p>What if you still want to manage them seperately?<br><a id="more"></a><br>You could follow these steps:</p>
+<ol>
+<li><p>Set up one of the accounts (the more frequently used one) with the global config. Refer to this <a href="https://help.github.com/articles/set-up-git/" target="_blank" rel="external">Github documentation</a>. This will save you the pain of authenticating every time you want to commit something.</p>
+</li>
+<li><p>For your second account, override the global config by a local one everytime you create a repo. While this might be a bit longer (2 extra commands for god’s sake!), it saves you from merging both the accounts and helps you manage both the accounts in a cleaner fashion. Following are the steps to override the local config by a global one.</p>
+ <figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">✝  ~/takeradi/blog   master±  git config user<span class="class">.name</span> takeradi</span><br><span class="line">✝  ~/takeradi/blog   master±  git config user<span class="class">.email</span> sampleemail@sampleemail.com</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>Hope this helps!</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>What do you when you have to manage multiple Git accounts on the same PC? I face the same situation for managing my work and personal Git accounts. Github recommends <a href="https://help.github.com/articles/merging-multiple-user-accounts/">merging both the accounts</a> and managing all your repos from one account.</p>
+<p>What if you still want to manage them seperately?<br>]]>
+    
+    </summary>
+    
+      <category term="Git" scheme="http://yoursite.com/tags/Git/"/>
+    
+      <category term="Version Control" scheme="http://yoursite.com/categories/Version-Control/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[Git Submodules]]></title>
@@ -88,8 +117,8 @@
     <link href="http://yoursite.com/2015/12/04/hello-world/"/>
     <id>http://yoursite.com/2015/12/04/hello-world/</id>
     <published>2015-12-04T16:26:41.000Z</published>
-    <updated>2015-12-04T20:19:43.000Z</updated>
-    <content type="html"><![CDATA[<p>I created this blog using <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>. Hexo is a static site generator. It enables you to build a simple website in under 10 mins. Since I am so impressed by Hexo, I am going to let their intro be my first post. Here goes!</p>
+    <updated>2015-12-04T20:39:26.000Z</updated>
+    <content type="html"><![CDATA[<p>I created this blog using <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>. Hexo is a static site generator. It enables you to build a simple website in under 5 mins. Since I am so impressed by Hexo, I am going to let their intro be my first post. Here goes!</p>
 <p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.<br><a id="more"></a></p>
 <h2 id="Quick_Start">Quick Start</h2><h3 id="Create_a_new_post">Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
 <p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
@@ -101,7 +130,7 @@
 <p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<p>I created this blog using <a href="http://hexo.io/">Hexo</a>. Hexo is a static site generator. It enables you to build a simple website in under 10 mins. Since I am so impressed by Hexo, I am going to let their intro be my first post. Here goes!</p>
+    <![CDATA[<p>I created this blog using <a href="http://hexo.io/">Hexo</a>. Hexo is a static site generator. It enables you to build a simple website in under 5 mins. Since I am so impressed by Hexo, I am going to let their intro be my first post. Here goes!</p>
 <p>Welcome to <a href="http://hexo.io/">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.<br>]]>
     
     </summary>
