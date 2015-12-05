@@ -4,7 +4,7 @@
   <subtitle><![CDATA[takeradi]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://takeradi.github.io/"/>
-  <updated>2015-12-05T05:30:22.000Z</updated>
+  <updated>2015-12-05T05:36:08.000Z</updated>
   <id>http://takeradi.github.io/</id>
   
   <author>
@@ -15,11 +15,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title><![CDATA[Atom Packages]]></title>
+    <title><![CDATA[Must Have Atom Packages]]></title>
     <link href="http://takeradi.github.io/2015/12/04/Atom-Packages/"/>
     <id>http://takeradi.github.io/2015/12/04/Atom-Packages/</id>
     <published>2015-12-05T04:30:44.000Z</published>
-    <updated>2015-12-05T05:30:22.000Z</updated>
+    <updated>2015-12-05T05:36:08.000Z</updated>
     <content type="html"><![CDATA[<p>Did you know that <a href="https://atom.io/" target="_blank" rel="external">Atom</a> is one of the best text editors out there?</p>
 <p>Atom is an open source, platform independent text editor built by GitHub. It has a great ecosystem of packages which extend the capabilities of Atom to a great extent. Packages are super simple to install using the in-built atom package manager - <code>apm</code>. And did I mention that its free? Yes, its free!</p>
 <p>Atom ships with a minimal set of packages. Here are a few packages that you must download to code like a pro:<br><a id="more"></a></p>
