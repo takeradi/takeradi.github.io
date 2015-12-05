@@ -35,7 +35,7 @@
 <link href="/css/main.css?v=0.4.5.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Git," />
+  <meta name="keywords" content="Atom," />
 
 
 
@@ -53,16 +53,19 @@
 
 
 
-<meta name="description" content="What do you when you have to manage multiple Git accounts on the same PC? I face the same situation for managing my work and personal Git accounts. Github recommends merging both the accounts and mana">
+<meta name="description" content="Did you know that Atom is one of the best text editors out there?
+Atom is an open source, platform independent text editor built by GitHub. It has a huge ecosystem of packages which extend the capabil">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Multiple Git accounts on one PC">
-<meta property="og:url" content="http://takeradi.github.io/2015/12/04/Multiple-Git-accounts-on-one-PC/index.html">
+<meta property="og:title" content="Atom Packages">
+<meta property="og:url" content="http://takeradi.github.io/2015/12/04/Atom-Packages/index.html">
 <meta property="og:site_name" content="takeradi">
-<meta property="og:description" content="What do you when you have to manage multiple Git accounts on the same PC? I face the same situation for managing my work and personal Git accounts. Github recommends merging both the accounts and mana">
-<meta property="og:updated_time" content="2015-12-05T04:29:37.000Z">
+<meta property="og:description" content="Did you know that Atom is one of the best text editors out there?
+Atom is an open source, platform independent text editor built by GitHub. It has a huge ecosystem of packages which extend the capabil">
+<meta property="og:updated_time" content="2015-12-05T05:08:40.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Multiple Git accounts on one PC">
-<meta name="twitter:description" content="What do you when you have to manage multiple Git accounts on the same PC? I face the same situation for managing my work and personal Git accounts. Github recommends merging both the accounts and mana">
+<meta name="twitter:title" content="Atom Packages">
+<meta name="twitter:description" content="Did you know that Atom is one of the best text editors out there?
+Atom is an open source, platform independent text editor built by GitHub. It has a huge ecosystem of packages which extend the capabil">
 
 
 
@@ -74,7 +77,7 @@
   };
 </script>
 
-  <title> Multiple Git accounts on one PC | takeradi </title>
+  <title> Atom Packages | takeradi </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="">
@@ -213,7 +216,7 @@
             
             
               
-                Multiple Git accounts on one PC
+                Atom Packages
               
             
           </h1>
@@ -222,7 +225,7 @@
         <div class="post-meta">
           <span class="post-time">
             Posted on
-            <time itemprop="dateCreated" datetime="2015-12-04T12:41:19-08:00" content="2015-12-04">
+            <time itemprop="dateCreated" datetime="2015-12-04T20:30:44-08:00" content="2015-12-04">
               2015-12-04
             </time>
           </span>
@@ -232,8 +235,8 @@
               &nbsp; | &nbsp; In
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/Version-Control/" itemprop="url" rel="index">
-                    <span itemprop="name">Version Control</span>
+                  <a href="/categories/Text-Editors/" itemprop="url" rel="index">
+                    <span itemprop="name">Text Editors</span>
                   </a>
                 </span>
 
@@ -248,8 +251,8 @@
             
               <span class="post-comments-count">
               &nbsp; | &nbsp;
-              <a href="/2015/12/04/Multiple-Git-accounts-on-one-PC/#comments" itemprop="discussionUrl">
-                <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2015/12/04/Multiple-Git-accounts-on-one-PC/" itemprop="commentsCount"></span>
+              <a href="/2015/12/04/Atom-Packages/#comments" itemprop="discussionUrl">
+                <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2015/12/04/Atom-Packages/" itemprop="commentsCount"></span>
               </a>
             </span>
             
@@ -268,17 +271,32 @@
       
 
       
-        <span itemprop="articleBody"><p>What do you when you have to manage multiple Git accounts on the same PC? I face the same situation for managing my work and personal Git accounts. Github recommends <a href="https://help.github.com/articles/merging-multiple-user-accounts/" target="_blank" rel="external">merging both the accounts</a> and managing all your repos from one account.</p>
-<p>What if you still want to manage them seperately?<br><a id="more"></a><br>You could follow these steps:</p>
+        <span itemprop="articleBody"><p>Did you know that <a href="https://atom.io/" target="_blank" rel="external">Atom</a> is one of the best text editors out there?</p>
+<p>Atom is an open source, platform independent text editor built by GitHub. It has a huge ecosystem of packages which extend the capabilities of Atom to a great extent. Packages are super simple to install using the in-built atom package manager - <code>apm</code>. And did I mention that its free? Yes, its free!</p>
+<p>Atom ships with a minimal set of packages. Here are a few packages that you must download to code like a ninja:<br><a id="more"></a></p>
 <ol>
-<li><p>Set up one of the accounts (the more frequently used one) with the global config. Refer to this <a href="https://help.github.com/articles/set-up-git/" target="_blank" rel="external">Github documentation</a>. This will save you the pain of authenticating every time you want to commit something.</p>
+<li><p><a href="https://atom.io/packages/emmet" target="_blank" rel="external">Emmet</a>:<br>Emmet is a plugin that should be installed, irrespective of the text editor/IDE you use. It makes writing HTML/CSS/SASS/LESS so much easier and faster. The syntax is pretty intuitive and very easy to catch on. Here’s the official <a href="http://docs.emmet.io/cheat-sheet/" target="_blank" rel="external">Emmet cheat sheet</a>. A must have package!</p>
 </li>
-<li><p>For your second account, override the global config by a local one everytime you create a repo. While this might be a bit longer (2 extra commands for god’s sake!), it saves you from merging both the accounts and helps you manage both the accounts in a cleaner fashion. Following are the steps to override the global config by a local one:</p>
- <figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">✝  ~/takeradi/blog -- master± &gt; git config user<span class="class">.name</span> takeradi</span><br><span class="line">✝  ~/takeradi/blog -- master± &gt; git config user<span class="class">.email</span> sampleemail@sampleemail.com</span><br></pre></td></tr></table></figure>
-<p> <em>Note: The above steps should be performed inside the newly created repo before committing/pushing anything to your Git remote repo.</em></p>
+<li><p><a href="https://atom.io/packages/pigments" target="_blank" rel="external">Pigments</a>:<br>I feel that managing CSS is a pain in the ass. Pigments displays the colors in your project files and give you a good idea of what’s its going to look like.</p>
+</li>
+<li><p><a href="https://atom.io/packages/minimap" target="_blank" rel="external">Minimap</a>:<br>Minimap displays a mini preview of your file on the right/left hand side of your editor. This one is ripped off from Sublime Text. Useful though!</p>
+</li>
+<li><p><a href="https://atom.io/packages/file-icons" target="_blank" rel="external">File Icons</a>:<br>File Icons is mostly eye candy. Assigns file icons to different types of files to improve visual appearance.</p>
+</li>
+<li><p><a href="https://atom.io/packages/atom-beautify" target="_blank" rel="external">Beautify</a>:<br>This package beautifies the code that you have written. It corrects the indentation and the spacing and supports multiple languages.</p>
+</li>
+<li><p><a href="https://atom.io/packages/atom-live-server" target="_blank" rel="external">Live Server</a>:<br>For me, this is by far the most useful plugin for web development. It saves me from refreshing the browser 100 times to see the output. Again, a must have package!</p>
+</li>
+<li><p><a href="https://atom.io/packages/atom-csscomb" target="_blank" rel="external">CSS Comb</a>:<br>This package sorts the CSS properties in a CSS/SASS/LESS file. Pretty famous among clean coders!</p>
+</li>
+<li><p><a href="https://atom.io/packages/merge-conflicts" target="_blank" rel="external">Merge Conflict</a>:<br>This package resolves git merge conflicts through Atom. I wonder why GitHub didn’t ship this plugin with Atom in the first place.</p>
+</li>
+<li><p><a href="https://atom.io/packages/linter" target="_blank" rel="external">Linter</a>:<br>A basic linter for your javascript files. There are many other linters available. Pick what you like the most.</p>
+</li>
+<li><p><a href="https://atom.io/packages/activate-power-mode" target="_blank" rel="external">Activate Power Mode</a>:<br>Sometimes, only activating power mode can save you. This package was made for trying times. Activate power mode and code your problems away! :D</p>
 </li>
 </ol>
-<p>Hope this helps!</p>
+<p>Atom has lots of other useful plugins. Let me know which ones you like the most!</p>
 </span>
       
     </div>
@@ -287,7 +305,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Git/" rel="tag">#Git</a>
+            <a href="/tags/Atom/" rel="tag">#Atom</a>
           
         </div>
       
@@ -296,17 +314,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2015/12/04/hello-world/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
+              <a href="/2015/12/04/Multiple-Git-accounts-on-one-PC/" rel="next" title="Multiple Git accounts on one PC">
+                <i class="fa fa-chevron-left"></i> Multiple Git accounts on one PC
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2015/12/04/Atom-Packages/" rel="prev" title="Atom Packages">
-                Atom Packages <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -491,9 +505,9 @@
 
     <script type="text/javascript">
       var disqus_shortname = 'takeradi';
-      var disqus_identifier = '2015/12/04/Multiple-Git-accounts-on-one-PC/';
-      var disqus_title = 'Multiple Git accounts on one PC';
-      var disqus_url = 'http://takeradi.github.io/2015/12/04/Multiple-Git-accounts-on-one-PC/';
+      var disqus_identifier = '2015/12/04/Atom-Packages/';
+      var disqus_title = 'Atom Packages';
+      var disqus_url = 'http://takeradi.github.io/2015/12/04/Atom-Packages/';
 
       function run_disqus_script(disqus_script){
         var dsq = document.createElement('script');
