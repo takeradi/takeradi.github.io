@@ -63,10 +63,10 @@ I will try to demonstrate G">
 <meta property="og:site_name" content="takeradi">
 <meta property="og:description" content="This post aims to ease the pain that one might feel while trying to understand Git Submodules. It is an advanced Git topic but it really isn’t that difficult to understand.
 I will try to demonstrate G">
-<meta property="og:image" content="http://takeradi.github.io/images/04122015/Git_Submodule_Hash.png">
-<meta property="og:image" content="http://takeradi.github.io/images/04122015/Git_Hash_Link.png">
-<meta property="og:image" content="http://takeradi.github.io/images/04122015/Git_Hash_Update.png">
-<meta property="og:updated_time" content="2015-12-05T04:23:52.000Z">
+<meta property="og:image" content="http://takeradi.github.io/images/12042015/Git_Submodule_Hash.png">
+<meta property="og:image" content="http://takeradi.github.io/images/12042015/Git_Hash_Link.png">
+<meta property="og:image" content="http://takeradi.github.io/images/12042015/Git_Hash_Update.png">
+<meta property="og:updated_time" content="2015-12-06T19:00:09.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Git Submodules">
 <meta name="twitter:description" content="This post aims to ease the pain that one might feel while trying to understand Git Submodules. It is an advanced Git topic but it really isn’t that difficult to understand.
@@ -307,9 +307,9 @@ I will try to demonstrate G">
 <h1 id="Stage,_Commit,_and_Push_the_main_project_to_master:">Stage, Commit, and Push the main project to master:<p></p></h1><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">✝  ~/takeradi/blog <span class="comment">-- master± &gt; git add .</span></span><br><span class="line"> ✝  ~/takeradi/blog <span class="comment">-- master± &gt; git commit -m "Initial commit of the blog"</span></span><br><span class="line">[master (root-<span class="operator"><span class="keyword">commit</span>) c17cc19] <span class="keyword">Initial</span> <span class="keyword">commit</span> <span class="keyword">of</span> the blog</span><br><span class="line"> <span class="number">10</span> files <span class="keyword">changed</span>, <span class="number">257</span> insertions(+)</span><br><span class="line"> <span class="keyword">create</span> <span class="keyword">mode</span> <span class="number">100644</span> .gitignore</span><br><span class="line"> <span class="keyword">create</span> <span class="keyword">mode</span> <span class="number">100644</span> .gitmodules</span><br><span class="line"> <span class="keyword">create</span> <span class="keyword">mode</span> <span class="number">100644</span> _config.yml</span><br><span class="line"> <span class="keyword">create</span> <span class="keyword">mode</span> <span class="number">100644</span> <span class="keyword">package</span>.<span class="keyword">json</span></span><br><span class="line"> <span class="keyword">create</span> <span class="keyword">mode</span> <span class="number">100644</span> scaffolds/draft.md</span><br><span class="line"> <span class="keyword">create</span> <span class="keyword">mode</span> <span class="number">100644</span> scaffolds/page.md</span><br><span class="line"> <span class="keyword">create</span> <span class="keyword">mode</span> <span class="number">100644</span> scaffolds/post.md</span><br><span class="line"> <span class="keyword">create</span> <span class="keyword">mode</span> <span class="number">100644</span> <span class="keyword">source</span>/_posts/Git-Submodules.md</span><br><span class="line"> <span class="keyword">create</span> <span class="keyword">mode</span> <span class="number">100644</span> <span class="keyword">source</span>/_posts/hello-world.md</span><br><span class="line"> <span class="keyword">create</span> <span class="keyword">mode</span> <span class="number">160000</span> themes/<span class="keyword">next</span></span><br><span class="line"> ✝  ~/takeradi/blog <span class="comment">-- master &gt; git remote add origin https://github.com/takeradi/takeradi-blog.git</span></span><br><span class="line"> ✝  ~/takeradi/blog <span class="comment">-- master &gt; git push -u origin master</span></span><br><span class="line">Username <span class="keyword">for</span> <span class="string">'https://github.com'</span>: takeradi</span><br><span class="line"><span class="keyword">Password</span> <span class="keyword">for</span> <span class="string">'https://takeradi@github.com'</span>:</span><br><span class="line">Counting objects: <span class="number">15</span>, done.</span><br><span class="line">Delta compression <span class="keyword">using</span> up <span class="keyword">to</span> <span class="number">8</span> threads.</span><br><span class="line">Compressing objects: <span class="number">100</span>% (<span class="number">10</span>/<span class="number">10</span>), done.</span><br><span class="line">Writing objects: <span class="number">100</span>% (<span class="number">15</span>/<span class="number">15</span>), <span class="number">3.77</span> KiB | <span class="number">0</span> <span class="keyword">bytes</span>/s, done.</span><br><span class="line">Total <span class="number">15</span> (delta <span class="number">0</span>), reused <span class="number">0</span> (delta <span class="number">0</span>)</span><br><span class="line"><span class="keyword">To</span> https://github.com/takeradi/takeradi-blog.git</span><br><span class="line"> * [<span class="keyword">new</span> branch]      <span class="keyword">master</span> -&gt; <span class="keyword">master</span></span><br><span class="line">Branch <span class="keyword">master</span> <span class="keyword">set</span> up <span class="keyword">to</span> track remote branch <span class="keyword">master</span> <span class="keyword">from</span> origin.</span></span><br></pre></td></tr></table></figure>
 <p>If you look at the GitHub repository you will see the hash of the commit linking to the commit of the forked repo that the submodule links to. Something like this:</p>
 <p>The above screenshot shows <code>32ca4fa</code> as the hash of the commit which is referenced in the forked repo. Clicking on it will take you to that commit.</p>
-<p><img src="/images/04122015/Git_Submodule_Hash.png" alt="Submodule hash link"></p>
+<p><img src="/images/12042015/Git_Submodule_Hash.png" alt="Submodule hash link"></p>
 <p>In fact, if you dig deeper, you will notice that the commit that was pushed from the main project was in fact the complete hash of the commit in the forked repo as shown below:</p>
-<p><img src="/images/04122015/Git_Hash_Link.png" alt="Complete hash of the forked repo"></p>
+<p><img src="/images/12042015/Git_Hash_Link.png" alt="Complete hash of the forked repo"></p>
 <p><hr></p>
 <h1 id="Customizing_the_library_further:">Customizing the library further:<p></p></h1><p>If you want to continue customizing the 3rd party library, you just have to follow the same steps again:</p>
 <ol>
@@ -317,7 +317,7 @@ I will try to demonstrate G">
 <li><p>Change directory to the main project and check git status. You will see something like this:</p>
  <figure class="highlight vhdl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">✝  ~/takeradi/blog <span class="comment">-- master± &gt; git status</span></span><br><span class="line"><span class="keyword">On</span> branch master</span><br><span class="line">Your branch <span class="keyword">is</span> up-<span class="keyword">to</span>-date <span class="keyword">with</span> <span class="attribute">'origin</span>/master'.</span><br><span class="line">Changes <span class="keyword">not</span> staged <span class="keyword">for</span> commit:</span><br><span class="line"> (<span class="keyword">use</span> <span class="string">"git add &lt;file&gt;..."</span> <span class="keyword">to</span> update what will be committed)</span><br><span class="line"> (<span class="keyword">use</span> <span class="string">"git checkout -- &lt;file&gt;..."</span> <span class="keyword">to</span> discard changes <span class="keyword">in</span> working directory)</span><br><span class="line"></span><br><span class="line">   modified:   source/_posts/hello-world.md</span><br><span class="line">   modified:   themes/<span class="keyword">next</span> (<span class="keyword">new</span> commits)</span><br><span class="line"></span><br><span class="line">no changes added <span class="keyword">to</span> commit (<span class="keyword">use</span> <span class="string">"git add"</span> <span class="keyword">and</span>/<span class="keyword">or</span> <span class="string">"git commit -a"</span>)</span><br></pre></td></tr></table></figure>
 <p> The <code>new commits</code> message now indicates that the submodule was updated. This updates the hash linking the submodule in your main project to point to the commit which is referenced on the forked module as shown below:</p>
-<p> <img src="/images/04122015/Git_Hash_Update.png" alt="Git Hash Update"></p>
+<p> <img src="/images/12042015/Git_Hash_Update.png" alt="Git Hash Update"></p>
 </li>
 <li><p>Stage, commit and push these changes in the main project.</p>
 </li>
@@ -425,21 +425,21 @@ I will try to demonstrate G">
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">4</span>
+              <span class="site-state-item-count">5</span>
               <span class="site-state-item-name">posts</span>
             </a>
           </div>
 
           <div class="site-state-item site-state-categories">
             <a href="/categories">
-              <span class="site-state-item-count">3</span>
+              <span class="site-state-item-count">4</span>
               <span class="site-state-item-name">categories</span>
               </a>
           </div>
 
           <div class="site-state-item site-state-tags">
             <a href="/tags">
-              <span class="site-state-item-count">3</span>
+              <span class="site-state-item-count">6</span>
               <span class="site-state-item-name">tags</span>
               </a>
           </div>

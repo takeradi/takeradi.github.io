@@ -4,7 +4,7 @@
   <subtitle><![CDATA[takeradi]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://takeradi.github.io/"/>
-  <updated>2015-12-05T05:36:08.000Z</updated>
+  <updated>2015-12-06T19:14:01.000Z</updated>
   <id>http://takeradi.github.io/</id>
   
   <author>
@@ -15,13 +15,43 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title><![CDATA[Pimp out your terminal]]></title>
+    <link href="http://takeradi.github.io/2015/12/06/Pimp-your-terminal/"/>
+    <id>http://takeradi.github.io/2015/12/06/Pimp-your-terminal/</id>
+    <published>2015-12-06T18:50:47.000Z</published>
+    <updated>2015-12-06T19:14:01.000Z</updated>
+    <content type="html"><![CDATA[<p><img src="/images/12062015/Pimped_Out_Terminal.png" alt="Pimp out your terminal"><br><a id="more"></a><br>Your bare bones - out of the box terminal is good. It does what it is supposed to do. But you can pimp it out to look like the one that you see above in just a few steps! This upgrade brings a lot of extra features and display very useful Git info and it’s surprisingly simple to achieve. All you have to do is these 3 things:</p>
+<ol>
+<li>Install (iTerm)[<a href="https://www.iterm2.com/" target="_blank" rel="external">https://www.iterm2.com/</a>]</li>
+<li>Install (ZSH)[<a href="http://ohmyz.sh/" target="_blank" rel="external">http://ohmyz.sh/</a>]</li>
+<li>Install a (powerline font)[<a href="https://github.com/powerline/fonts" target="_blank" rel="external">https://github.com/powerline/fonts</a>] and this awesome (theme)[<a href="https://github.com/wesbos/Cobalt2-iterm" target="_blank" rel="external">https://github.com/wesbos/Cobalt2-iterm</a>]].</li>
+</ol>
+<p>To learn more, check out this <a href="https://www.youtube.com/watch?v=rl7PzPAZDyY&amp;list=PLu8EoSxDXHP7tXPJp5ZmUpuT7sFvrswzf" target="_blank" rel="external">YouTube playlist</a> by <a href="https://www.youtube.com/user/wesbos" target="_blank" rel="external">Wes Bos</a>.</p>
+<p>I made the change recently and I am definitely not going back! Let me know what you guys think!</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><img src="/images/12062015/Pimped_Out_Terminal.png" alt="Pimp out your terminal"><br>]]>
+    
+    </summary>
+    
+      <category term="ZSH" scheme="http://takeradi.github.io/tags/ZSH/"/>
+    
+      <category term="bash" scheme="http://takeradi.github.io/tags/bash/"/>
+    
+      <category term="iTerm" scheme="http://takeradi.github.io/tags/iTerm/"/>
+    
+      <category term="Terminal" scheme="http://takeradi.github.io/categories/Terminal/"/>
+    
+  </entry>
+  
+  <entry>
     <title><![CDATA[Must Have Atom Packages]]></title>
     <link href="http://takeradi.github.io/2015/12/04/Atom-Packages/"/>
     <id>http://takeradi.github.io/2015/12/04/Atom-Packages/</id>
     <published>2015-12-05T04:30:44.000Z</published>
-    <updated>2015-12-05T05:36:08.000Z</updated>
-    <content type="html"><![CDATA[<p>Did you know that <a href="https://atom.io/" target="_blank" rel="external">Atom</a> is one of the best text editors out there?</p>
-<p>Atom is an open source, platform independent text editor built by GitHub. It has a great ecosystem of packages which extend the capabilities of Atom to a great extent. Packages are super simple to install using the in-built atom package manager - <code>apm</code>. And did I mention that its free? Yes, its free!</p>
+    <updated>2015-12-06T18:39:07.000Z</updated>
+    <content type="html"><![CDATA[<p>There are a lot of text editors out there. Sublime Text, Atom, Brackets, Visual Studio Code. <a href="https://atom.io/" target="_blank" rel="external">Atom</a> is one of the best and it hands down my favorite!</p>
+<p>Atom is an open source, platform independent text editor built by GitHub. It has an amazing ecosystem of packages which greatly extend the capabilities. Packages are super simple to install using the in-built atom package manager - <code>apm</code>. And did I mention that its free? Yes, its free!</p>
 <p>Atom ships with a minimal set of packages. Here are a few packages that you must download to code like a pro:<br><a id="more"></a></p>
 <ol>
 <li><p><a href="https://atom.io/packages/emmet" target="_blank" rel="external">Emmet</a>:<br>Emmet is a plugin that should be installed, irrespective of the text editor/IDE you use. It makes writing HTML/CSS/SASS/LESS so much easier and faster. The syntax is pretty intuitive and very easy to catch on. Here’s the official <a href="http://docs.emmet.io/cheat-sheet/" target="_blank" rel="external">Emmet cheat sheet</a>. A must have package!</p>
@@ -42,14 +72,15 @@
 </li>
 <li><p><a href="https://atom.io/packages/linter" target="_blank" rel="external">Linter</a>:<br>A basic linter for your javascript files. There are many other linters available. Pick what you like the most.</p>
 </li>
-<li><p><a href="https://atom.io/packages/activate-power-mode" target="_blank" rel="external">Activate Power Mode</a>:<br>Sometimes, only activating power mode can save you. This package was made for trying times. Activate power mode and code your problems away! :D</p>
+<li><p><a href="https://atom.io/packages/activate-power-mode" target="_blank" rel="external">Activate Power Mode</a>:<br>This is a fun one! Sometimes, only activating power mode can save you. This package was made for times like that. Activate power mode and code your problems away! :D</p>
 </li>
 </ol>
-<p>Atom has lots of other useful plugins. Let me know which ones you like the most!</p>
+<p>Atom has lots of other useful packages. It sucks though that its integration with Git is not that great. Weird right? Made by GitHub :-/ Lets hope that they decide to solve that issue in their next update.</p>
+<p>Let me know which Atom packages you like the most!</p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<p>Did you know that <a href="https://atom.io/">Atom</a> is one of the best text editors out there?</p>
-<p>Atom is an open source, platform independent text editor built by GitHub. It has a great ecosystem of packages which extend the capabilities of Atom to a great extent. Packages are super simple to install using the in-built atom package manager - <code>apm</code>. And did I mention that its free? Yes, its free!</p>
+    <![CDATA[<p>There are a lot of text editors out there. Sublime Text, Atom, Brackets, Visual Studio Code. <a href="https://atom.io/">Atom</a> is one of the best and it hands down my favorite!</p>
+<p>Atom is an open source, platform independent text editor built by GitHub. It has an amazing ecosystem of packages which greatly extend the capabilities. Packages are super simple to install using the in-built atom package manager - <code>apm</code>. And did I mention that its free? Yes, its free!</p>
 <p>Atom ships with a minimal set of packages. Here are a few packages that you must download to code like a pro:<br>]]>
     
     </summary>
@@ -65,13 +96,13 @@
     <link href="http://takeradi.github.io/2015/12/04/Multiple-Git-accounts-on-one-PC/"/>
     <id>http://takeradi.github.io/2015/12/04/Multiple-Git-accounts-on-one-PC/</id>
     <published>2015-12-04T20:41:19.000Z</published>
-    <updated>2015-12-05T04:29:37.000Z</updated>
+    <updated>2015-12-06T18:33:13.000Z</updated>
     <content type="html"><![CDATA[<p>What do you when you have to manage multiple Git accounts on the same PC? I face the same situation for managing my work and personal Git accounts. Github recommends <a href="https://help.github.com/articles/merging-multiple-user-accounts/" target="_blank" rel="external">merging both the accounts</a> and managing all your repos from one account.</p>
 <p>What if you still want to manage them seperately?<br><a id="more"></a><br>You could follow these steps:</p>
 <ol>
 <li><p>Set up one of the accounts (the more frequently used one) with the global config. Refer to this <a href="https://help.github.com/articles/set-up-git/" target="_blank" rel="external">Github documentation</a>. This will save you the pain of authenticating every time you want to commit something.</p>
 </li>
-<li><p>For your second account, override the global config by a local one everytime you create a repo. While this might be a bit longer (2 extra commands for god’s sake!), it saves you from merging both the accounts and helps you manage both the accounts in a cleaner fashion. Following are the steps to override the global config by a local one:</p>
+<li><p>For your second account, override the global config by a local one every time you create a repo. While this might be a bit longer (2 extra commands for god’s sake!), it saves you from merging both the accounts and helps you manage both the accounts in a cleaner fashion. Following are the steps to override the global config by a local one:</p>
  <figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">✝  ~/takeradi/blog -- master± &gt; git config user<span class="class">.name</span> takeradi</span><br><span class="line">✝  ~/takeradi/blog -- master± &gt; git config user<span class="class">.email</span> sampleemail@sampleemail.com</span><br></pre></td></tr></table></figure>
 <p> <em>Note: The above steps should be performed inside the newly created repo before committing/pushing anything to your Git remote repo.</em></p>
 </li>
@@ -95,7 +126,7 @@
     <link href="http://takeradi.github.io/2015/12/04/Git-Submodules/"/>
     <id>http://takeradi.github.io/2015/12/04/Git-Submodules/</id>
     <published>2015-12-04T16:26:41.000Z</published>
-    <updated>2015-12-05T04:23:52.000Z</updated>
+    <updated>2015-12-06T19:00:09.000Z</updated>
     <content type="html"><![CDATA[<p>This post aims to ease the pain that one might feel while trying to understand <a href="https://git-scm.com/book/en/v2/Git-Tools-Submodules" target="_blank" rel="external">Git Submodules</a>. It is an advanced Git topic but it really isn’t that difficult to understand.</p>
 <p>I will try to demonstrate Git Submodules through an example. Imagine that you have to create a project and use a third party library inside that project. You also want to customize the 3rd party library according to your needs. How do you approach this problem? Using Git Submodules! Let’s look at the example:</p>
 <a id="more"></a>
@@ -127,9 +158,9 @@
 <h1 id="Stage,_Commit,_and_Push_the_main_project_to_master:">Stage, Commit, and Push the main project to master:<p></p></h1><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">✝  ~/takeradi/blog <span class="comment">-- master± &gt; git add .</span></span><br><span class="line"> ✝  ~/takeradi/blog <span class="comment">-- master± &gt; git commit -m "Initial commit of the blog"</span></span><br><span class="line">[master (root-<span class="operator"><span class="keyword">commit</span>) c17cc19] <span class="keyword">Initial</span> <span class="keyword">commit</span> <span class="keyword">of</span> the blog</span><br><span class="line"> <span class="number">10</span> files <span class="keyword">changed</span>, <span class="number">257</span> insertions(+)</span><br><span class="line"> <span class="keyword">create</span> <span class="keyword">mode</span> <span class="number">100644</span> .gitignore</span><br><span class="line"> <span class="keyword">create</span> <span class="keyword">mode</span> <span class="number">100644</span> .gitmodules</span><br><span class="line"> <span class="keyword">create</span> <span class="keyword">mode</span> <span class="number">100644</span> _config.yml</span><br><span class="line"> <span class="keyword">create</span> <span class="keyword">mode</span> <span class="number">100644</span> <span class="keyword">package</span>.<span class="keyword">json</span></span><br><span class="line"> <span class="keyword">create</span> <span class="keyword">mode</span> <span class="number">100644</span> scaffolds/draft.md</span><br><span class="line"> <span class="keyword">create</span> <span class="keyword">mode</span> <span class="number">100644</span> scaffolds/page.md</span><br><span class="line"> <span class="keyword">create</span> <span class="keyword">mode</span> <span class="number">100644</span> scaffolds/post.md</span><br><span class="line"> <span class="keyword">create</span> <span class="keyword">mode</span> <span class="number">100644</span> <span class="keyword">source</span>/_posts/Git-Submodules.md</span><br><span class="line"> <span class="keyword">create</span> <span class="keyword">mode</span> <span class="number">100644</span> <span class="keyword">source</span>/_posts/hello-world.md</span><br><span class="line"> <span class="keyword">create</span> <span class="keyword">mode</span> <span class="number">160000</span> themes/<span class="keyword">next</span></span><br><span class="line"> ✝  ~/takeradi/blog <span class="comment">-- master &gt; git remote add origin https://github.com/takeradi/takeradi-blog.git</span></span><br><span class="line"> ✝  ~/takeradi/blog <span class="comment">-- master &gt; git push -u origin master</span></span><br><span class="line">Username <span class="keyword">for</span> <span class="string">'https://github.com'</span>: takeradi</span><br><span class="line"><span class="keyword">Password</span> <span class="keyword">for</span> <span class="string">'https://takeradi@github.com'</span>:</span><br><span class="line">Counting objects: <span class="number">15</span>, done.</span><br><span class="line">Delta compression <span class="keyword">using</span> up <span class="keyword">to</span> <span class="number">8</span> threads.</span><br><span class="line">Compressing objects: <span class="number">100</span>% (<span class="number">10</span>/<span class="number">10</span>), done.</span><br><span class="line">Writing objects: <span class="number">100</span>% (<span class="number">15</span>/<span class="number">15</span>), <span class="number">3.77</span> KiB | <span class="number">0</span> <span class="keyword">bytes</span>/s, done.</span><br><span class="line">Total <span class="number">15</span> (delta <span class="number">0</span>), reused <span class="number">0</span> (delta <span class="number">0</span>)</span><br><span class="line"><span class="keyword">To</span> https://github.com/takeradi/takeradi-blog.git</span><br><span class="line"> * [<span class="keyword">new</span> branch]      <span class="keyword">master</span> -&gt; <span class="keyword">master</span></span><br><span class="line">Branch <span class="keyword">master</span> <span class="keyword">set</span> up <span class="keyword">to</span> track remote branch <span class="keyword">master</span> <span class="keyword">from</span> origin.</span></span><br></pre></td></tr></table></figure>
 <p>If you look at the GitHub repository you will see the hash of the commit linking to the commit of the forked repo that the submodule links to. Something like this:</p>
 <p>The above screenshot shows <code>32ca4fa</code> as the hash of the commit which is referenced in the forked repo. Clicking on it will take you to that commit.</p>
-<p><img src="/images/04122015/Git_Submodule_Hash.png" alt="Submodule hash link"></p>
+<p><img src="/images/12042015/Git_Submodule_Hash.png" alt="Submodule hash link"></p>
 <p>In fact, if you dig deeper, you will notice that the commit that was pushed from the main project was in fact the complete hash of the commit in the forked repo as shown below:</p>
-<p><img src="/images/04122015/Git_Hash_Link.png" alt="Complete hash of the forked repo"></p>
+<p><img src="/images/12042015/Git_Hash_Link.png" alt="Complete hash of the forked repo"></p>
 <p><hr></p>
 <h1 id="Customizing_the_library_further:">Customizing the library further:<p></p></h1><p>If you want to continue customizing the 3rd party library, you just have to follow the same steps again:</p>
 <ol>
@@ -137,7 +168,7 @@
 <li><p>Change directory to the main project and check git status. You will see something like this:</p>
  <figure class="highlight vhdl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">✝  ~/takeradi/blog <span class="comment">-- master± &gt; git status</span></span><br><span class="line"><span class="keyword">On</span> branch master</span><br><span class="line">Your branch <span class="keyword">is</span> up-<span class="keyword">to</span>-date <span class="keyword">with</span> <span class="attribute">'origin</span>/master'.</span><br><span class="line">Changes <span class="keyword">not</span> staged <span class="keyword">for</span> commit:</span><br><span class="line"> (<span class="keyword">use</span> <span class="string">"git add &lt;file&gt;..."</span> <span class="keyword">to</span> update what will be committed)</span><br><span class="line"> (<span class="keyword">use</span> <span class="string">"git checkout -- &lt;file&gt;..."</span> <span class="keyword">to</span> discard changes <span class="keyword">in</span> working directory)</span><br><span class="line"></span><br><span class="line">   modified:   source/_posts/hello-world.md</span><br><span class="line">   modified:   themes/<span class="keyword">next</span> (<span class="keyword">new</span> commits)</span><br><span class="line"></span><br><span class="line">no changes added <span class="keyword">to</span> commit (<span class="keyword">use</span> <span class="string">"git add"</span> <span class="keyword">and</span>/<span class="keyword">or</span> <span class="string">"git commit -a"</span>)</span><br></pre></td></tr></table></figure>
 <p> The <code>new commits</code> message now indicates that the submodule was updated. This updates the hash linking the submodule in your main project to point to the commit which is referenced on the forked module as shown below:</p>
-<p> <img src="/images/04122015/Git_Hash_Update.png" alt="Git Hash Update"></p>
+<p> <img src="/images/12042015/Git_Hash_Update.png" alt="Git Hash Update"></p>
 </li>
 <li><p>Stage, commit and push these changes in the main project.</p>
 </li>
