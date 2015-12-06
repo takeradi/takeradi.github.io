@@ -4,7 +4,7 @@
   <subtitle><![CDATA[takeradi]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://takeradi.github.io/"/>
-  <updated>2015-12-06T19:17:49.000Z</updated>
+  <updated>2015-12-06T19:20:50.000Z</updated>
   <id>http://takeradi.github.io/</id>
   
   <author>
@@ -19,8 +19,8 @@
     <link href="http://takeradi.github.io/2015/12/06/Pimp-your-terminal/"/>
     <id>http://takeradi.github.io/2015/12/06/Pimp-your-terminal/</id>
     <published>2015-12-06T18:50:47.000Z</published>
-    <updated>2015-12-06T19:17:49.000Z</updated>
-    <content type="html"><![CDATA[<p><img src="/images/12062015/Pimped_Out_Terminal.png" alt="Pimp out your terminal"><br><a id="more"></a><br>Your bare bones - out of the box terminal is good. It does what it is supposed to do. But you can pimp it out to look like the one that you see above in just a few steps! This upgrade brings a lot of extra features and display very useful Git info and it’s surprisingly simple to achieve. All you have to do is these 3 things:</p>
+    <updated>2015-12-06T19:20:50.000Z</updated>
+    <content type="html"><![CDATA[<p><img src="/images/12062015/Pimped_Out_Terminal.png" alt="Pimp out your terminal"><br><a id="more"></a><br>Your bare bones - out of the box terminal is good. It does what it is supposed to do. But you can pimp it out to look like the one that you see above in just a few steps! This upgrade brings a lot of extra features and displays very useful Git info and it’s surprisingly simple to achieve. All you have to do is these 3 things:</p>
 <ol>
 <li>Install <a href="https://www.iterm2.com/" target="_blank" rel="external">iTerm</a></li>
 <li>Install <a href="http://ohmyz.sh/" target="_blank" rel="external">ZSH</a></li>
