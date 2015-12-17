@@ -4,7 +4,7 @@
   <subtitle><![CDATA[takeradi]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://takeradi.github.io/"/>
-  <updated>2015-12-06T19:20:50.000Z</updated>
+  <updated>2015-12-17T04:51:20.000Z</updated>
   <id>http://takeradi.github.io/</id>
   
   <author>
@@ -13,6 +13,48 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[Javascript - Closures]]></title>
+    <link href="http://takeradi.github.io/2015/12/11/Javascript-101-Closures/"/>
+    <id>http://takeradi.github.io/2015/12/11/Javascript-101-Closures/</id>
+    <published>2015-12-11T14:16:01.000Z</published>
+    <updated>2015-12-17T04:51:20.000Z</updated>
+    <content type="html"><![CDATA[<p>There are a plethora of articles, tutorials and courses on Javascript and I am pretty sure that most of them have been written by amazing web developers who have a vast amount of knowledge on this subject. I plan on writing this <a href="http://takeradi.github.io/categories/Javascript/">Javascript</a> series with a two-fold reason in mind:</p>
+<ol>
+<li>Check my understanding on Javascript</li>
+<li>Explain the concepts in this series in a way that I feel is easy to understand</li>
+</ol>
+<p>Before I start, I want to mention that the I find the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures" target="_blank" rel="external">MDN documentation</a> to be very useful in understanding most of the concepts. I am going to link the MDN documentation wherever possible to help you easily find additional information on the topics that I plan to cover.</p>
+<p>I am going to start this series off with <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures" target="_blank" rel="external">Closure</a> but to understand closure, one must have a good understanding of <a href="https://msdn.microsoft.com/en-us/library/bzt2dkta.aspx" target="_blank" rel="external">Variable Scope</a> in Javascript. The important thing to remember about Variable Scope is that Javascript DOES NOT have <code>block-level</code> scope. Javascript has <code>function-level</code> scope (Remembering this alone can save you from so much pain). As long as you understand that, this article should be quite easy to understand.</p>
+<h1 id="What_the_heck_is_a_Closure?">What the heck is a Closure?</h1><p>Imagine the following scenario - You have an inner function which tries to access the local variables of its outer function. If this inner function, which has access to the outer functions variables, is made accessible outside of the outer function, a closure is formed.</p>
+<p>Confused yet? Let’s try to grasp this concept with the help of an example.</p>
+<h1 id="Closure_in_Action">Closure in Action</h1><figure class="highlight actionscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">incrementCounter</span><span class="params">()</span></span>&#123;</span><br><span class="line">  <span class="keyword">var</span> counter=<span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">function</span> <span class="title">increment</span><span class="params">()</span></span>&#123;</span><br><span class="line">   counter++;</span><br><span class="line">   <span class="keyword">return</span> counter;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> increment;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> add1 = incrementCounter();</span><br><span class="line"></span><br><span class="line">alert(add1()); <span class="comment">//alerts 1</span></span><br><span class="line">alert(add1()); <span class="comment">//alerts 2</span></span><br><span class="line">alert(add1()); <span class="comment">//alerts 3</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//counter is now 3</span></span><br></pre></td></tr></table></figure>
+<p>If you notice carefully, you will see 3 things over here:</p>
+<ol>
+<li>The inner function - <code>increment</code> has access to the outer function’s local variable - <code>counter</code></li>
+<li>The inner function is returned when the outer function - <code>incrementCounter</code> is called, making it accessible outside of the outer function - <code>incrementCounter</code></li>
+<li>When the inner function is called from outside of the outer function, it remembers the variables (<code>counter</code> in this case) that it had access to while it was created. Hence the value that you get when calling this inner function - <code>increment</code> or <code>add1</code> is 1 greater than the previous call.</li>
+</ol>
+<p>Hope that clears the main concept.</p>
+<h1 id="Practical_Examples_of_Closure">Practical Examples of Closure</h1><p>You will see many theoretical examples of Closure being thrown around to understand the concept of closure. But we all know that practically applying the concept contributes the most actually understanding it.</p>
+<p>You will find this <a href="http://stackoverflow.com/questions/2728278/what-is-a-practical-use-for-a-closure-in-javascript" target="_blank" rel="external">Stackoverflow question</a> to be very useful for this.</p>
+<p>The example that I really like is this one:</p>
+<figure class="highlight actionscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> person = <span class="function"><span class="keyword">function</span> <span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="comment">// Private variable</span></span><br><span class="line">	<span class="keyword">var</span> name = <span class="string">"Taker"</span>;</span><br><span class="line">	<span class="keyword">return</span> &#123;</span><br><span class="line">		getName : <span class="function"><span class="keyword">function</span> <span class="params">()</span> </span>&#123;</span><br><span class="line">			<span class="keyword">return</span> name;</span><br><span class="line">		&#125;,</span><br><span class="line">		setName : <span class="function"><span class="keyword">function</span> <span class="params">(newName)</span> </span>&#123;</span><br><span class="line">			name = newName;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;;</span><br><span class="line">&#125;();</span><br><span class="line">alert(person.name); <span class="comment">// Undefined</span></span><br><span class="line">alert(person.getName()); <span class="comment">// "Taker"</span></span><br><span class="line">person.setName(<span class="string">"Takeradi"</span>);</span><br><span class="line">alert(person.getName()); <span class="comment">// "Takeradi"</span></span><br></pre></td></tr></table></figure>
+<p>This is actually the <a href="http://yuiblog.com/blog/2007/06/12/module-pattern/" target="_blank" rel="external">Javascript Module Pattern</a>. In this example, you cannot access the variable <code>name</code> directly. The only way that it can be interacted with is the two functions <code>getName()</code> and <code>setName()</code>. You alone decide what IS and IS NOT accessible to everyone. Remember OOP anyone?</p>
+<p>And that’s about it! I hope this article helps you understand what Javascript Closure is. As always, the MDN documentation that I have linked above is an amazing read.</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>There are a plethora of articles, tutorials and courses on Javascript and I am pretty sure that most of them have been written by amazing]]>
+    </summary>
+    
+      <category term="closures" scheme="http://takeradi.github.io/tags/closures/"/>
+    
+      <category term="javascript" scheme="http://takeradi.github.io/tags/javascript/"/>
+    
+      <category term="Javascript" scheme="http://takeradi.github.io/categories/Javascript/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[Pimp out your terminal]]></title>

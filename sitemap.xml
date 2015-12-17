@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://takeradi.github.io/2015/12/11/Javascript-101-Closures/</loc>
+    <lastmod>2015-12-17T04:51:20.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://takeradi.github.io/2015/12/06/Pimp-your-terminal/</loc>
     <lastmod>2015-12-06T19:20:50.000Z</lastmod>
   </url>

@@ -37,7 +37,7 @@
 <link href="/css/main.css?v=0.4.5.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="closures,javascript," />
 
 
 
@@ -55,15 +55,16 @@
 
 
 
-<meta name="description" content="takeradi&apos;s personal blog">
-<meta property="og:type" content="website">
-<meta property="og:title" content="takeradi">
-<meta property="og:url" content="http://takeradi.github.io/index.html">
+<meta name="description" content="There are a plethora of articles, tutorials and courses on Javascript and I am pretty sure that most of them have been written by amazing web developers who have a vast amount of knowledge on this sub">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Javascript - Closures">
+<meta property="og:url" content="http://takeradi.github.io/2015/12/11/Javascript-101-Closures/index.html">
 <meta property="og:site_name" content="takeradi">
-<meta property="og:description" content="takeradi&apos;s personal blog">
+<meta property="og:description" content="There are a plethora of articles, tutorials and courses on Javascript and I am pretty sure that most of them have been written by amazing web developers who have a vast amount of knowledge on this sub">
+<meta property="og:updated_time" content="2015-12-17T04:51:20.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="takeradi">
-<meta name="twitter:description" content="takeradi&apos;s personal blog">
+<meta name="twitter:title" content="Javascript - Closures">
+<meta name="twitter:description" content="There are a plethora of articles, tutorials and courses on Javascript and I am pretty sure that most of them have been written by amazing web developers who have a vast amount of knowledge on this sub">
 
 
 
@@ -75,7 +76,7 @@
   };
 </script>
 
-  <title> takeradi </title>
+  <title> Javascript - Closures | takeradi </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="">
@@ -105,9 +106,7 @@
 
 
 
-  <div class="container one-column 
-   page-home 
-">
+  <div class="container one-column page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -194,24 +193,9 @@
       <div class="main-inner">
         <div id="content" class="content">
           
-  <section id="posts" class="posts-expand">
 
+  <div id="posts" class="posts-expand">
     
-
-    
-    
-      
-      
-        
-        
-        
-      
-
-      
-    
-
-    
-      
 
   
   
@@ -231,10 +215,7 @@
             
             
               
-                
-                <a class="post-title-link" href="/2015/12/11/Javascript-101-Closures/" itemprop="url">
-                  Javascript - Closures
-                </a>
+                Javascript - Closures
               
             
           </h1>
@@ -289,10 +270,7 @@
       
 
       
-        
-          <span itemprop="articleBody">
-            
-              <p>There are a plethora of articles, tutorials and courses on Javascript and I am pretty sure that most of them have been written by amazing web developers who have a vast amount of knowledge on this subject. I plan on writing this <a href="http://takeradi.github.io/categories/Javascript/">Javascript</a> series with a two-fold reason in mind:</p>
+        <span itemprop="articleBody"><p>There are a plethora of articles, tutorials and courses on Javascript and I am pretty sure that most of them have been written by amazing web developers who have a vast amount of knowledge on this subject. I plan on writing this <a href="http://takeradi.github.io/categories/Javascript/">Javascript</a> series with a two-fold reason in mind:</p>
 <ol>
 <li>Check my understanding on Javascript</li>
 <li>Explain the concepts in this series in a way that I feel is easy to understand</li>
@@ -315,551 +293,48 @@
 <figure class="highlight actionscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> person = <span class="function"><span class="keyword">function</span> <span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="comment">// Private variable</span></span><br><span class="line">	<span class="keyword">var</span> name = <span class="string">"Taker"</span>;</span><br><span class="line">	<span class="keyword">return</span> &#123;</span><br><span class="line">		getName : <span class="function"><span class="keyword">function</span> <span class="params">()</span> </span>&#123;</span><br><span class="line">			<span class="keyword">return</span> name;</span><br><span class="line">		&#125;,</span><br><span class="line">		setName : <span class="function"><span class="keyword">function</span> <span class="params">(newName)</span> </span>&#123;</span><br><span class="line">			name = newName;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;;</span><br><span class="line">&#125;();</span><br><span class="line">alert(person.name); <span class="comment">// Undefined</span></span><br><span class="line">alert(person.getName()); <span class="comment">// "Taker"</span></span><br><span class="line">person.setName(<span class="string">"Takeradi"</span>);</span><br><span class="line">alert(person.getName()); <span class="comment">// "Takeradi"</span></span><br></pre></td></tr></table></figure>
 <p>This is actually the <a href="http://yuiblog.com/blog/2007/06/12/module-pattern/" target="_blank" rel="external">Javascript Module Pattern</a>. In this example, you cannot access the variable <code>name</code> directly. The only way that it can be interacted with is the two functions <code>getName()</code> and <code>setName()</code>. You alone decide what IS and IS NOT accessible to everyone. Remember OOP anyone?</p>
 <p>And that’s about it! I hope this article helps you understand what Javascript Closure is. As always, the MDN documentation that I have linked above is an amazing read.</p>
-
-            
-          </span>
-        
+</span>
       
     </div>
 
     <footer class="post-footer">
       
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2015/12/06/Pimp-your-terminal/" itemprop="url">
-                  Pimp out your terminal
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            Posted on
-            <time itemprop="dateCreated" datetime="2015-12-06T10:50:47-08:00" content="2015-12-06">
-              2015-12-06
-            </time>
-          </span>
-
+        <div class="post-tags">
           
-            <span class="post-category" >
-              &nbsp; | &nbsp; In
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/Terminal/" itemprop="url" rel="index">
-                    <span itemprop="name">Terminal</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
+            <a href="/tags/closures/" rel="tag">#closures</a>
           
-
+            <a href="/tags/javascript/" rel="tag">#javascript</a>
           
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span class="post-comments-count">
-              &nbsp; | &nbsp;
-              <a href="/2015/12/06/Pimp-your-terminal/#comments" itemprop="discussionUrl">
-                <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2015/12/06/Pimp-your-terminal/" itemprop="commentsCount"></span>
+              <a href="/2015/12/06/Pimp-your-terminal/" rel="next" title="Pimp out your terminal">
+                <i class="fa fa-chevron-left"></i> Pimp out your terminal
               </a>
-            </span>
             
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <p><img src="/images/12062015/Pimped_Out_Terminal.png" alt="Pimp out your terminal"><br>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2015/12/06/Pimp-your-terminal/#more" rel="contents">
-              Read more &raquo;
-            </a>
           </div>
-        
-      
-    </div>
 
-    <footer class="post-footer">
-      
-
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
       
 
       
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
-      
 
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2015/12/04/Atom-Packages/" itemprop="url">
-                  Must Have Atom Packages
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            Posted on
-            <time itemprop="dateCreated" datetime="2015-12-04T20:30:44-08:00" content="2015-12-04">
-              2015-12-04
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp; In
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/Text-Editors/" itemprop="url" rel="index">
-                    <span itemprop="name">Text Editors</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-              &nbsp; | &nbsp;
-              <a href="/2015/12/04/Atom-Packages/#comments" itemprop="discussionUrl">
-                <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2015/12/04/Atom-Packages/" itemprop="commentsCount"></span>
-              </a>
-            </span>
-            
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <p>There are a lot of text editors out there. Sublime Text, Atom, Brackets, Visual Studio Code. <a href="https://atom.io/">Atom</a> is one of the best and it hands down my favorite!</p>
-<p>Atom is an open source, platform independent text editor built by GitHub. It has an amazing ecosystem of packages which greatly extend the capabilities. Packages are super simple to install using the in-built atom package manager - <code>apm</code>. And did I mention that its free? Yes, its free!</p>
-<p>Atom ships with a minimal set of packages. Here are a few packages that you must download to code like a pro:<br>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2015/12/04/Atom-Packages/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-        
+    <div class="post-spread">
       
     </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2015/12/04/Multiple-Git-accounts-on-one-PC/" itemprop="url">
-                  Multiple Git accounts on one PC
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            Posted on
-            <time itemprop="dateCreated" datetime="2015-12-04T12:41:19-08:00" content="2015-12-04">
-              2015-12-04
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp; In
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/Version-Control/" itemprop="url" rel="index">
-                    <span itemprop="name">Version Control</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-              &nbsp; | &nbsp;
-              <a href="/2015/12/04/Multiple-Git-accounts-on-one-PC/#comments" itemprop="discussionUrl">
-                <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2015/12/04/Multiple-Git-accounts-on-one-PC/" itemprop="commentsCount"></span>
-              </a>
-            </span>
-            
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <p>What do you when you have to manage multiple Git accounts on the same PC? I face the same situation for managing my work and personal Git accounts. Github recommends <a href="https://help.github.com/articles/merging-multiple-user-accounts/">merging both the accounts</a> and managing all your repos from one account.</p>
-<p>What if you still want to manage them seperately?<br>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2015/12/04/Multiple-Git-accounts-on-one-PC/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2015/12/04/Git-Submodules/" itemprop="url">
-                  Git Submodules
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            Posted on
-            <time itemprop="dateCreated" datetime="2015-12-04T08:26:41-08:00" content="2015-12-04">
-              2015-12-04
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp; In
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/Version-Control/" itemprop="url" rel="index">
-                    <span itemprop="name">Version Control</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-              &nbsp; | &nbsp;
-              <a href="/2015/12/04/Git-Submodules/#comments" itemprop="discussionUrl">
-                <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2015/12/04/Git-Submodules/" itemprop="commentsCount"></span>
-              </a>
-            </span>
-            
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <p>This post aims to ease the pain that one might feel while trying to understand <a href="https://git-scm.com/book/en/v2/Git-Tools-Submodules">Git Submodules</a>. It is an advanced Git topic but it really isn’t that difficult to understand.</p>
-<p>I will try to demonstrate Git Submodules through an example. Imagine that you have to create a project and use a third party library inside that project. You also want to customize the 3rd party library according to your needs. How do you approach this problem? Using Git Submodules! Let’s look at the example:</p>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2015/12/04/Git-Submodules/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2015/12/04/hello-world/" itemprop="url">
-                  Hello World
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            Posted on
-            <time itemprop="dateCreated" datetime="2015-12-04T08:20:41-08:00" content="2015-12-04">
-              2015-12-04
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp; In
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/General/" itemprop="url" rel="index">
-                    <span itemprop="name">General</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-              &nbsp; | &nbsp;
-              <a href="/2015/12/04/hello-world/#comments" itemprop="discussionUrl">
-                <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2015/12/04/hello-world/" itemprop="commentsCount"></span>
-              </a>
-            </span>
-            
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <p>I created this blog using <a href="http://hexo.io/">Hexo</a>. Hexo is a static site generator. It enables you to build a simple website in under 5 mins. Since I am so impressed by Hexo, I am going to let their intro be my first post. Here goes!</p>
-<p>Welcome to <a href="http://hexo.io/">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.<br>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2015/12/04/hello-world/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-
-  </section>
-
-  
+  </div>
 
 
         </div>
@@ -868,6 +343,14 @@
 
 
         
+  <div class="comments" id="comments">
+    
+      <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+      </div>
+    
+  </div>
+
 
       </div>
 
@@ -888,8 +371,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Table Of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" src="/images/default_avatar.png" alt="takeradi" itemprop="image"/>
           <p class="site-author-name" itemprop="name">takeradi</p>
@@ -952,6 +444,23 @@
       </section>
 
       
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc-indicator-top post-toc-indicator">
+            <i class="fa fa-angle-double-up"></i>
+          </div>
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#What_the_heck_is_a_Closure?"><span class="nav-number">1.</span> <span class="nav-text">What the heck is a Closure?</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Closure_in_Action"><span class="nav-number">2.</span> <span class="nav-text">Closure in Action</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Practical_Examples_of_Closure"><span class="nav-number">3.</span> <span class="nav-text">Practical Examples of Closure</span></a></li></ol></div>
+            
+          </div>
+          <div class="post-toc-indicator-bottom post-toc-indicator">
+            <i class="fa fa-angle-double-down"></i>
+          </div>
+        </section>
+      
 
     </div>
   </aside>
@@ -1004,9 +513,9 @@
 
     <script type="text/javascript">
       var disqus_shortname = 'takeradi';
-      var disqus_identifier = 'index.html';
-      var disqus_title = '';
-      var disqus_url = '';
+      var disqus_identifier = '2015/12/11/Javascript-101-Closures/';
+      var disqus_title = 'Javascript - Closures';
+      var disqus_url = 'http://takeradi.github.io/2015/12/11/Javascript-101-Closures/';
 
       function run_disqus_script(disqus_script){
         var dsq = document.createElement('script');
@@ -1017,6 +526,8 @@
       }
 
       run_disqus_script('count.js');
+      
+        run_disqus_script('embed.js');
       
     </script>
   
@@ -1040,6 +551,167 @@
   <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
 
   
+  
+<script type="text/javascript" src="/js/bootstrap.scrollspy.js?v=0.4.5.2" id="bootstrap.scrollspy.custom"></script>
+
+
+<script type="text/javascript" id="sidebar.toc.highlight">
+  $(document).ready(function () {
+    var tocSelector = '.post-toc';
+    var $tocSelector = $(tocSelector);
+    var activeCurrentSelector = '.active-current';
+
+    $tocSelector
+      .on('activate.bs.scrollspy', function () {
+        var $currentActiveElement = $(tocSelector + ' .active').last();
+
+        removeCurrentActiveClass();
+        $currentActiveElement.addClass('active-current');
+
+        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
+      })
+      .on('clear.bs.scrollspy', function () {
+        removeCurrentActiveClass();
+      });
+
+    function removeCurrentActiveClass () {
+      $(tocSelector + ' ' + activeCurrentSelector)
+        .removeClass(activeCurrentSelector.substring(1));
+    }
+
+    function processTOC () {
+      getTOCMaxHeight();
+      toggleTOCOverflowIndicators();
+    }
+
+    function getTOCMaxHeight () {
+      var height = $('.sidebar').height() -
+                   $tocSelector.position().top -
+                   $('.post-toc-indicator-bottom').height();
+
+      $tocSelector.css('height', height);
+
+      return height;
+    }
+
+    function toggleTOCOverflowIndicators () {
+      tocOverflowIndicator(
+        '.post-toc-indicator-top',
+        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
+      );
+
+      tocOverflowIndicator(
+        '.post-toc-indicator-bottom',
+        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
+      )
+    }
+
+    $(document).on('sidebar.motion.complete', function () {
+      processTOC();
+    });
+
+    $('body').scrollspy({ target: tocSelector });
+    $(window).on('resize', function () {
+      if ( $('.sidebar').hasClass('sidebar-active') ) {
+        processTOC();
+      }
+    });
+
+    onScroll($tocSelector);
+
+    function onScroll (element) {
+      element.on('mousewheel DOMMouseScroll', function (event) {
+          var oe = event.originalEvent;
+          var delta = oe.wheelDelta || -oe.detail;
+
+          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+          event.preventDefault();
+
+          toggleTOCOverflowIndicators();
+      });
+    }
+
+    function tocOverflowIndicator (indicator, action) {
+      var $indicator = $(indicator);
+      var opacity = action === 'show' ? 1 : 0;
+      $indicator.velocity ?
+        $indicator.velocity('stop').velocity({
+          opacity: opacity
+        }, { duration: 100 }) :
+        $indicator.stop().animate({
+          opacity: opacity
+        }, 100);
+    }
+
+  });
+</script>
+
+<script type="text/javascript" id="sidebar.nav">
+  $(document).ready(function () {
+    var html = $('html');
+    var TAB_ANIMATE_DURATION = 200;
+    var hasVelocity = $.isFunction(html.velocity);
+
+    $('.sidebar-nav li').on('click', function () {
+      var item = $(this);
+      var activeTabClassName = 'sidebar-nav-active';
+      var activePanelClassName = 'sidebar-panel-active';
+      if (item.hasClass(activeTabClassName)) {
+        return;
+      }
+
+      var currentTarget = $('.' + activePanelClassName);
+      var target = $('.' + item.data('target'));
+
+      hasVelocity ?
+        currentTarget.velocity('transition.slideUpOut', TAB_ANIMATE_DURATION, function () {
+          target
+            .velocity('stop')
+            .velocity('transition.slideDownIn', TAB_ANIMATE_DURATION)
+            .addClass(activePanelClassName);
+        }) :
+        currentTarget.animate({ opacity: 0 }, TAB_ANIMATE_DURATION, function () {
+          currentTarget.hide();
+          target
+            .stop()
+            .css({'opacity': 0, 'display': 'block'})
+            .animate({ opacity: 1 }, TAB_ANIMATE_DURATION, function () {
+              currentTarget.removeClass(activePanelClassName);
+              target.addClass(activePanelClassName);
+            });
+        });
+
+      item.siblings().removeClass(activeTabClassName);
+      item.addClass(activeTabClassName);
+    });
+
+    $('.post-toc a').on('click', function (e) {
+      e.preventDefault();
+      var targetSelector = escapeSelector(this.getAttribute('href'));
+      var offset = $(targetSelector).offset().top;
+      hasVelocity ?
+        html.velocity('stop').velocity('scroll', {
+          offset: offset  + 'px',
+          mobileHA: false
+        }) :
+        $('html, body').stop().animate({
+          scrollTop: offset
+        }, 500);
+    });
+
+    // Expand sidebar on post detail page by default, when post has a toc.
+    motionMiddleWares.sidebar = function () {
+      var $tocContent = $('.post-toc-content');
+      if (CONFIG.sidebar === 'post') {
+        if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
+          displaySidebar();
+        }
+      }
+    };
+  });
+</script>
+
+
 
   <script type="text/javascript" src="/js/bootstrap.js"></script>
 
